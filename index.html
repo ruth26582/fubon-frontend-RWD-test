@@ -4,29 +4,26 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="./style.scss"> -->
   <link rel="stylesheet" href="./css.css">
   <title>RWD Test</title>
 </head>
 <body>
   <header class="page-header">
-    <div class="title">
-      <h2>HOTEL</h2>
-    </div>
-    <div class="menu">
-      <li>About</li>
-      <li>Service</li>
-      <li>Rooms</li>
-      <li>Blog</li>
-      <li>Service</li>
-      <li>Contact</li>
-    </div>
+    <div class="title">HOTEL</div>
+    <ul class="menu">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Service</a></li>
+      <li><a href="#">Rooms</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
     <div class="sign-up">
       <div class="sign-up-text">SIGN UP</div>
+      <img class="btn-menu" src="./image/button_menu.svg">
     </div>
 
-    <div class="header-middle-text">Exclusive Boutique Hotel</div>
-    <p class="text">Luxury Boutique Hotel</p>
+    <div class="header-top-text">Exclusive Boutique Hotel</div>
+    <div class="header-bottom-text">Luxury Boutique Hotel</div>
 
     <div class="pic-items">
       <img src="./image/Image_FB.svg" alt="fb">
@@ -67,7 +64,7 @@
           <img src="./image/button_plus.svg" alt="plus">
         </div>
       </div>
-      <hr>
+      <hr class="ac-hr">
       <div class="children">
         <div class="info-title">CHILDREN</div>
         <div class="adults-children-box">
@@ -76,6 +73,27 @@
           <img src="./image/button_plus.svg" alt="plus">
         </div>
       </div>
+
+      <div class="acbox">
+        <div class="ph-adults">
+          <div class="info-title adults-title">ADULTS</div>
+          <div class="adults-children-box">
+            <img src="./image/button_minus.svg" alt="minus">
+            <p>2</p>
+            <img src="./image/button_plus.svg" alt="plus">
+          </div>
+        </div>
+        <hr>
+        <div class="ph-children">
+          <div class="info-title adults-title">CHILDREN</div>
+          <div class="adults-children-box">
+            <img src="./image/button_minus.svg" alt="minus">
+            <p>0</p>
+            <img src="./image/button_plus.svg" alt="plus">
+          </div>
+        </div>
+      </div>
+
       <hr>
       <div class="check-availability">
         <p>CHECK AVAILABILITY</p>
@@ -88,13 +106,17 @@
 
   <nav class="page-nav">
     <div class="nav-text-box">
-      <div class="nav-text">
-        <p>Luxury Plaza Hotel for You</p>
+      <div class="nav-L">
+        <div class="nav-text">Luxury Plaza</div>
+        <div class="nav-text">Hotel for You</div>
       </div>
-      <p class="nav-content">Distans orb power to raise and purify our thoughts like a strain of sacred music.</p>
-      <div class="nav-aboutus">
-        <p>ABOUT US</p>
+      
+      <div class="nav-D">
+        <div class="nav-content">Distans orb power to raise and purify our</div>
+        <div class="nav-content">thoughts like a strain of sacred music.</div>
       </div>
+
+      <div class="nav-aboutus">ABOUT US</div>
     </div>
     <div class="nav-pic-box">
       <img src="./image/image_item.svg" alt="image-item">
@@ -103,18 +125,24 @@
         <div class="play-vedio">Play vedio<p>2:34</p></div>
       </div>
     </div>
-  </nav>
+  </nav> 
 
   <footer class="page-footer">
     <div class="footer-left">
       <div class="left-hotel">HOTEL</div>
       <div class="left-info">
-        <img src="./image/Image_phone.svg" alt="phone">
-        <p class="info-text">(4321)0987-654-320</p>
-        <img src="./image/Image_mail.svg" alt="mail">
-        <p class="info-text">support@hotel.com</p>
-        <img src="./image/Image_location.svg" alt="location">
-        <p class="location">33 Jaja Park Rd, Yellow, USA</p>
+        <div class="pic-text">
+          <img src="./image/Image_phone.svg" alt="phone">
+          <p class="info-text">(4321)0987-654-320</p>
+        </div>
+        <div class="pic-text">
+          <img src="./image/Image_mail.svg" alt="mail">
+          <p class="info-text">support@hotel.com</p>
+        </div>
+        <div class="pic-text">
+          <img src="./image/Image_location.svg" alt="location">
+          <p class="location">33 Jaja Park Rd, Yellow, USA</p>
+        </div>
       </div>
     </div>
     <div class="footer-right">

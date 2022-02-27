@@ -4,85 +4,93 @@ body {
 
 .page-header {
   background-image: url(./image/image_background.svg);
-  /* background-repeat:no-repeat; */
-  /* background-attachment: fixed; */
   width: 100%;
   height: 1000px;
   display: flex;
+  justify-content: space-around;
   background-position: center;
   background-size: cover;
-  position:relative;
+  padding-top: 30px;
+  position: relative;
 }
 
 .title {
-  width: 32%;
+  color: white;
+  font-size: 35px;
 }
 
 .menu {
   display: flex;
-  width: 36%;
+  width: 40%;
   justify-content: space-between;
+  margin-top: 0;
 }
 
-h2 {
-  color: white;
-  margin-left: 150px;
-}
-
-li {
-  color: white;
+ul {
   list-style: none; 
-  margin-top: 25px;
-  font-size: 18px;
+  padding-left: 0; 
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.item {
+  color: white;
+  font-size: 20px;
 }
 
 .sign-up {
-  width: 32%;
   color: white;
+  font-size: 25px;
 }
 
 .sign-up-text {
   font-size: 25px;
-  margin-top: 20px;
   padding: 3px 20px;
-  float: right;
-  margin-right: 150px;
-  border: none;
   border-radius: 35px;
-  border: ridge white;
+  border: solid rgb(202, 195, 195);
 }
 
-.header-middle-text {
+.btn-menu {
+  display: none;
+}
+
+.header-top-text {
   color: white;
   position: absolute;
   top: 28%;
-  left: 10%;
-  width: 60px;
+  left: 7.5%;
+  width: 20%;
   font-size: 60px;
 }
 
-.text {
+.header-bottom-text {
   color: white;
   position: absolute;
-  left: 10%;
-  top: 49%;
+  font-size: 20px;
+  left: 7.5%;
+  top: 50%;
 }
 
 .pic-items {
   position: absolute;
   top: 56%;
-  left: 10%;
+  left: 7.5%;
 }
 
 .hearfer-info {
-  width: 1220px;
-  height: 180px;
+  width: 84%;
+  height: 170px;
   background-color: rgb(65, 82, 116);
   position: absolute;
   top: 74%;
-  left: 10%;
+  left: 7.5%;
   border-radius: 25px;
   display: flex;
+  justify-content: space-around;
 }
 
 hr {
@@ -92,16 +100,18 @@ hr {
 
 .arrival {
   color: rgba(255, 246, 233, 0.699);
-  width: 305px;
+  width: 22%;
 }
 
 .info-title {
-  margin: 30px 0 20px 40px;
+  margin: 25px 0;
+  width: 100%;
+  margin-left: 35px;
 }
 
 .info-weather {
   display: flex;
-  margin: 0 45px;
+  margin-left: 35px;
 }
 
 .date {
@@ -124,22 +134,26 @@ hr {
 
 .onlyDropDown {
   margin-top: -15px;
-  margin-left: 12px;
+  margin-left: 5px;
 }
 
 .departure {
   color: rgba(255, 246, 233, 0.699);
-  width: 305px;
+  width: 22%;
+}
+
+.acbox {
+  display: none;
 }
 
 .adults {
   color: rgba(255, 246, 233, 0.699);
-  width: 152.5px;
+  width: 11%;
 }
 
 .children {
   color: rgba(255, 246, 233, 0.699);
-  width: 152.5px;
+  width: 11%;
 }
 
 .adults-children-box {
@@ -160,19 +174,26 @@ hr {
 }
 
 .check-availability {
-  margin: auto;
-  font-size: 18px;
+  width: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check-availability p{
+  font-size: 16px;
   border-radius: 25px;
   background-color: rgb(121, 214, 121);
-  width: 220px;
-  height: 55px;
+  width: 90%;
+  height: 45px;
+  line-height: 45px;
   text-align: center;
 }
 
 .btn-dropdown {
   position: absolute;
-  top: 90%;
-  left: 48.6%;
+  top: 87%;
+  left: 46.7%;
 }
 
 .btn-dropdown img {
@@ -185,64 +206,53 @@ hr {
   height: 800px;
   background-color: rgb(238, 238, 238);
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-text-box {
-  width: 760px;
+  width: 42%;
 }
 
 .nav-content {
-  width: 335px;
-  font-size: 20px;
-  margin-left: 150px;
-  margin: 20px 0 0 150px;
-  line-height: 28px;
+  font-size: 19px;
   color: gray;
 }
 
+.nav-D {
+  margin-top: 20px;
+  line-height: 30px;
+}
+
 .nav-text {
-  font-size: 60px;
-  width: 350px;
-  margin-left: 150px;
-  margin-top: 235px;
-}
-
-.nav-text p {
-  margin-bottom: 0;
-}
-
-.nav-pic-box {
-  width: 760px;
-  position: relative;
+  font-size: 50px;
 }
 
 .nav-aboutus {
-  margin-left: 150px;
   border-radius: 25px;
-  border: ridge #eeeeee;
-  width: 170px;
-  height: 50px;
+  border: solid rgb(202, 195, 195);
   margin-top: 40px;
+  width: 140px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
 }
 
-.nav-aboutus p {
-  text-align: center;
+.nav-pic-box {
+  width: 42%;
 }
 
 .nav-pic-box img {
-  width: 610px;
-  height: 590px;
-  margin-top: 50px;
+  width: 100%;
 }
 
 .bg-white {
   background-color: white;
   position: absolute;
-  width: 600px;
-  height: 170px;
-  border-radius: 0px 0px 25px 25px;
-  top: 59%;
-  left: 0.7%;
+  width: 42%;
+  margin-top: -151px;
+  height: 20%;
+  border-radius: 0px 0px 17px 17px;
   display: flex;
 }
 
@@ -268,32 +278,45 @@ hr {
   width: 100%;
   height: 300px;
   display: flex;
+  justify-content: center;
 }
 
 .footer-left {
-  margin: 80px 180px 80px 150px;
+  width: 60%;
+}
+
+.footer-right {
+  width: 25%;
 }
 
 .left-hotel {
-  font-size: 70px;
+  font-size: 65px;
   color: white;
+  margin-top: 78px;
+  margin-bottom: 25px;
 }
 
 .left-info {
   display: flex;
-  margin-top: 25px;
+  font-size: 18px;
+  flex-flow: wrap;
 }
 
-.info-text {
+.pic-text {
+  display: flex;
   color: white;
-  margin: 15px 25px 15px 10px;
-  font-size: 20px;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.pic-text img {
+  margin-right: 15px;
+  width: 20px;
+  height: 18px;
 }
 
 .location {
   color: rgba(230, 212, 212, 0.932);
-  font-size: 20px;
-  margin: 15px 25px 15px 10px;
 }
 
 .right-subscribe {
@@ -304,7 +327,7 @@ hr {
 
 .footer-right input {
   margin-bottom: 10px;
-  width: 300px;
+  width: 280px;
   height: 35px;
   margin-top: 20px;
 }
@@ -313,18 +336,246 @@ hr {
   color: rgba(230, 212, 212, 0.932);
 }
 
-
-/*電腦*/
-/* @media screen and (min-width:1025px) { 
-  
-} */
-
 /*平板*/
-@media screen and (min-width: 721px) and (max-width: 1024px){ 
+@media screen and (min-width: 781px) and (max-width: 1024px){ 
+  .hearfer-info {
+    width: 93%;
+    left: 3.5%;
+}
   
+  .menu {
+    width: 50%;
+  }
+
+  .header-top-text {
+    left: 3%;
+    top: 13%;
+  }
+
+  .header-bottom-text {
+    left: 3%;
+    top: 36%;
+  }
+
+  .pic-items {
+    top: 45%;
+    left: 3%;
+  }
+
+  .info-title {
+    margin: 25px 0 20px 18px;
+    width: 60%;
+    font-size: 15px;
+  }
+
+  .info-weather {
+    margin-left: 15px;
+  }
+
+  .date {
+    font-size: 45px;
+    margin-right: 7px;
+  }
+
+  .years {
+    font-size: 18px;
+    margin: 7px 0 0 0;
+  }
+
+  .week {
+    margin: 5px 0;
+    font-size: 18px;
+  }
+
+  .onlyDropDown {
+    margin-left: 2px;
+  }
+
+  .btn-dropdown {
+    left: 45.7%;
+  }
+
+  .adults-children-box p {
+    font-size: 45px;
+  }
+
+  .adults-children-box {
+    margin-top: -42px;
+  }
+
+  .check-availability p {
+    font-size: 12px;
+  }
+
+  .footer-left {
+    width: 40%;
+  }
+  
+  .footer-right {
+    width: 40%;
+  }
+
+  .left-info {
+    flex-flow: wrap;
+  }
+
+  .page-footer {
+    height: 400px;
+  }
 }
 
 /*手機*/
-@media screen and (min-width: 320px) and (max-width: 720px){ 
+@media screen and (min-width: 320px) and (max-width: 780px){ 
+  .menu {
+    display: none;
+  }
+
+  .btn-menu {
+    display: block;
+    width: 48px;
+    height: 48px;
+  }
+
+  .header-top-text {
+    left: 9%;
+    top: 15%;
+    width: 45%;
+  }
+
+  .header-bottom-text {
+    left: 9%;
+    top: 38%;
+  }
+
+  .sign-up {
+    display: flex;
+  }
   
+  .sign-up-text {
+    height: 30px;
+    margin-right: 15px;
+  }
+
+  .pic-items {
+    top: 46%;
+  }
+
+  .hearfer-info {
+    display: block;
+    height: 680px;
+    top: 57%;
+  }
+
+  .info-weather {
+    margin-bottom: 20px;
+    width: 335px;
+  }
+
+  .adults, .children, .ac-hr {
+    display: none;
+  }
+
+  .acbox {
+    display: flex;
+    height: 160px;
+  }
+
+  .ph-adults {
+    width: 50%;
+  }
+
+  .ph-children {
+    width: 50%;
+  }
+
+  .info-title.adults-title {
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 20px;
+    color: rgba(255, 246, 233, 0.699);
+  }
+
+  .adults-children-box {
+    margin-top: -60px;
+  }
+
+  .check-availability {
+    width: 100%;
+    height: 25%;
+  }
+
+  .check-availability p {
+    width: 50%;
+    font-size: 18px;
+  }
+
+  .btn-dropdown {
+    top: 120%;
+    left: 45.7%;
+  }
+
+  .page-nav {
+    width: 100%;
+    display: block;
+    height: 1400px;
+  }
+
+  .nav-text-box {
+    width: 85%;
+    margin: auto;
+    padding-top: 350px;
+  }
+
+  .bg-white {
+    width: 85%;
+  }
+
+  .bg-white img {
+    margin: 30px 0 40px 40px;
+  }
+
+  .play-vedio {
+    margin: 35px 0 0 20px;
+  }
+
+  .nav-pic-box {
+    padding-top: 100px;
+    width: 85%;
+    margin: auto;
+  }
+
+  .footer-left {
+    width: 100%;
+  }
+  
+  .footer-right {
+    width: 100%;
+  }
+
+  .page-footer {
+    display: block;
+    height: 560px;
+  }
+
+  .left-hotel {
+    line-height: 140px;
+    margin: 0 0 0 35px;
+  }
+
+  .left-info {
+    display: block;
+  }
+
+  .pic-text {
+    font-size: 20px;
+    padding: 0 35px;
+  }
+
+  .right-subscribe {
+    margin: 45px 0 0 35px;
+  }
+
+  .footer-right input, .footer-right p {
+    margin-left: 35px;
+  }
 }
