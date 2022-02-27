@@ -19,6 +19,15 @@ body {
   font-size: 35px;
 }
 
+input {
+  display: none;
+}
+
+label {
+  float: right;
+  cursor: pointer;
+}
+
 .menu {
   display: flex;
   width: 40%;
@@ -33,11 +42,6 @@ ul {
 
 a {
   text-decoration: none;
-  color: white;
-  font-size: 20px;
-}
-
-.item {
   color: white;
   font-size: 20px;
 }
@@ -341,7 +345,7 @@ hr {
   .hearfer-info {
     width: 93%;
     left: 3.5%;
-}
+  }
   
   .menu {
     width: 50%;
@@ -427,7 +431,36 @@ hr {
 /*手機*/
 @media screen and (min-width: 320px) and (max-width: 780px){ 
   .menu {
+    display: block;
+    text-align: center;
+    display: block;
+    position: absolute;
+    width: 75%;
+    line-height: 55px;
+    top: 8%;
+    background: rgb(65 82 116);
+    z-index: 1;
+    width: 84%;
+  }
+
+  .humburger-hide {
     display: none;
+  }
+
+  li {
+    border-bottom: solid 1px #2e2424;
+  }
+
+  li:hover {
+    background-color: rgb(119 127 143);
+  }
+
+  ul {
+    display: inline-block;
+  }
+
+  .title {
+    width: 33%;
   }
 
   .btn-menu {

@@ -10,7 +10,7 @@
 <body>
   <header class="page-header">
     <div class="title">HOTEL</div>
-    <ul class="menu">
+    <ul class="menu humburger-hide" id="humburger">
       <li><a href="#">About</a></li>
       <li><a href="#">Service</a></li>
       <li><a href="#">Rooms</a></li>
@@ -19,7 +19,8 @@
     </ul>
     <div class="sign-up">
       <div class="sign-up-text">SIGN UP</div>
-      <img class="btn-menu" src="./image/button_menu.svg">
+      <label for="switch"><img id="btn-menu" class="btn-menu" src="./image/button_menu.svg"></label>
+      <input type="checkbox" id="switch">
     </div>
 
     <div class="header-top-text">Exclusive Boutique Hotel</div>
@@ -151,5 +152,11 @@
       <p>No spam Only profit.</p>
     </div>
   </footer>
+
+  <script>
+    document.getElementById('btn-menu').addEventListener('click', function() {
+      document.getElementById('humburger').classList.toggle('humburger-hide');
+    });
+  </script>
 </body>
 </html>
