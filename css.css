@@ -19,7 +19,7 @@ body {
   font-size: 35px;
 }
 
-input {
+.sign-up input {
   display: none;
 }
 
@@ -255,7 +255,7 @@ hr {
   position: absolute;
   width: 42%;
   margin-top: -151px;
-  height: 20%;
+  height: 21%;
   border-radius: 0px 0px 17px 17px;
   display: flex;
 }
